@@ -1,5 +1,4 @@
 # Alex NLP 
 
-## Tasks 
+Alex Nature Language Processing Package
 
-[] train GPT2 with RLHF
