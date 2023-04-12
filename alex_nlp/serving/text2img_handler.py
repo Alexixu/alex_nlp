@@ -2,7 +2,7 @@
 author: alexixu 
 created at: 2023/4/12
 """
-
+import json
 import os
 
 import openai
@@ -28,4 +28,6 @@ class DALL2_Handler(RequestHandler):
 
         image_url = response['data'][0]['url']
         print(f"return image url {image_url}")
-        self.write(image_url)
+        result = {"gen_url": image_url}
+
+        self.write(json.dumps(result, ensure_ascii=False))
