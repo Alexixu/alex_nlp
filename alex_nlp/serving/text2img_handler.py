@@ -27,5 +27,5 @@ class DALL2_Handler(RequestHandler):
         )
 
         image_url = response['data'][0]['url']
-
-        return image_url
+        print(f"return image url {image_url}")
+        self.write(image_url)
