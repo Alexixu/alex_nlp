@@ -24,7 +24,7 @@ def make_app():
 
 async def main():
     app = make_app()
-    app.listen(port=8008)
+    app.listen(port=8008, address='0.0.0.0')
     await asyncio.Event().wait()
 
 
